@@ -1,0 +1,32 @@
+.rectangle {
+  width: 80px;
+  height: 50px;
+  border: black solid 1px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 50px;
+  font-size: 2em;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border: black solid 1px;
+  border-radius: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 30px;
+}
+
+.container {
+  margin: 10px;
+}
+
+.on {
+  background: lightgreen;
+}
+
+.off {
+  background: lightcoral;
+}
