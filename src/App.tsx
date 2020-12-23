@@ -28,6 +28,7 @@ function App() {
       <OnOff on={false} />
       <OnOff2 on={true} />
       <OnOff2 on={false} />
+      <div>OnOff3:</div>
       <OnOff3 on={true} />
       <OnOff3 on={false} />
     </div>

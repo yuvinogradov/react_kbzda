@@ -56,7 +56,7 @@ export function OnOff2(props: OnOffPropsType) {
   );
 }
 
-type OnOff3PropsType = {};
+type OnOff3PropsType = {on: boolean;};
 
 export function OnOff3(props: OnOff3PropsType) {
   // different way to define styles:
