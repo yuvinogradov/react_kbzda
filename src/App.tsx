@@ -15,7 +15,7 @@ function PageTitle(props: PageTitlePropsType) {
 function App() {
   return (
     <div className="App">
-      <PageTitle title={"This is App Component"} />
+      <PageTitle title={"This is an App Component"} />
       Article 1
       <Rating value={3} />
       <Accordion title="Menu" collapsed={true} />
