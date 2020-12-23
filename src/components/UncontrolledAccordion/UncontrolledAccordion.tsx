@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import IconButton from "@material-ui/core/IconButton";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 
 type AccordionTitlePropsType = {
   title: string;
@@ -34,8 +35,12 @@ function UncontrolledAccordion(props: AccordionPropsType) {
   return (
     <>
       <AccordionTitle title={props.title} />{" "}
-      <IconButton onClick={collapseButtonClickHandler}>
-        <ExpandMoreIcon />
+      <IconButton
+        color="primary"
+        aria-label="Show/Hide"
+        onClick={collapseButtonClickHandler}
+      >
+        {isCollapsed ? <ExpandMoreIcon /> : <ExpandLessIcon />}
       </IconButton>
       {/* {props.collapsed ? "" : <AccordionBody />} */}
       {!isCollapsed && <AccordionBody />}
