@@ -25,10 +25,10 @@ function App() {
       {/* UncontrolledAccordion */}
       <UncontrolledAccordion title="Menu" collapsedDefault={true} />
       <UncontrolledAccordion title="Users" collapsedDefault={false} />
-      {/* Article 2
+      <div>Article 2</div>
       <Rating value={4} />
       Article 3
-      <Rating value={5} /> */}
+      <Rating value={5} />
       <OnOff on={true} />
       <OnOff on={false} />
       <OnOff2 on={true} />

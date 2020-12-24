@@ -10,16 +10,13 @@ type StarPropsType = {
 };
 
 function Star(props: StarPropsType) {
-  if (props.selected) {
-    return (
-      <span>
-        {" "}
-        <b>Star </b>{" "}
-      </span>
-    );
-  } else {
-    return <span>Star </span>;
-  }
+  return props.selected ? (
+    <span>
+      <b>Star </b>
+    </span>
+  ) : (
+    <span>Star </span>
+  );
 }
 
 function Rating(props: RatingPropsType) {
