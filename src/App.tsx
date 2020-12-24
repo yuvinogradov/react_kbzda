@@ -3,7 +3,7 @@ import "./styles.css";
 import "./App.css";
 // import Accordion from "./components/Accordion/Accordion";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
-import Rating from "./components/Rating/Rating";
+import UncontrolledRating from "./components/UncontrolledRating/UncontrolledRating";
 import OnOff, { OnOff2, OnOff3 } from "./components/OnOff/OnOff";
 
 type PageTitlePropsType = {
@@ -26,9 +26,9 @@ function App() {
       <UncontrolledAccordion title="Menu" collapsedDefault={true} />
       <UncontrolledAccordion title="Users" collapsedDefault={false} />
       <div>Article 2</div>
-      <Rating value={4} />
+      <UncontrolledRating value={4} />
       Article 3
-      <Rating value={5} />
+      <UncontrolledRating value={2} />
       <OnOff on={true} />
       <OnOff on={false} />
       <OnOff2 on={true} />

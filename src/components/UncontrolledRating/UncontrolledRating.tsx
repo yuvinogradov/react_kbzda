@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 type RatingPropsType = {
   // value: number
@@ -21,14 +21,8 @@ function Star(props: StarPropsType) {
   );
 }
 
-function Rating(props: RatingPropsType) {
-  // const rating = [];
-
-  // for (let i = 0; i < 5; i++) {
-  //   rating.push(i < props.value);
-  // }
-  // console.log(rating);
-
+function UncontrolledRating(props: RatingPropsType) {
+  let [value, setValue] = useState(0);
   return (
     <div>
       <Star selected={props.value >= 1} />
@@ -40,4 +34,4 @@ function Rating(props: RatingPropsType) {
   );
 }
 
-export default Rating;
+export default UncontrolledRating;
