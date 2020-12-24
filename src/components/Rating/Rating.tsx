@@ -13,7 +13,8 @@ function Star(props: StarPropsType) {
   if (props.selected) {
     return (
       <span>
-        <b>Star </b>
+        {" "}
+        <b>Star </b>{" "}
       </span>
     );
   } else {
